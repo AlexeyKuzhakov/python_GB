@@ -23,3 +23,17 @@ elif name == 'Леша':
     print('Привет', name)
 else:
     print(name, ', вас не ждали')
+
+#инверсия числа
+print('Введите целое число: ')
+original = int(input())
+if original % 2 ==0:
+    inverted = 0
+    while original != 0:
+        inverted = inverted * 10 + (original % 10)
+        original //= 10
+    print(inverted)
+else:
+    print('Вы ввели не целое число')
+
+
