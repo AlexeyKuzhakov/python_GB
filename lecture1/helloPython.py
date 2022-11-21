@@ -8,7 +8,6 @@ c = round(a/b)
 print(f'{a} / {b} = {c}')
 
 list = [1, 3, 4]
-print('Список', list)
 
 if a in list:
     print(f'Число {a} есть в списке')
@@ -36,4 +35,10 @@ if original % 2 ==0:
 else:
     print('Вы ввели не целое число')
 
+print('Квадраты чисел из списка: ', list)
+for i in list:
+    print(i**2)
 
+print(f'Список от нуля до введенного вами первого числа "{a}": ')
+for j in range(a):
+    print(j)
