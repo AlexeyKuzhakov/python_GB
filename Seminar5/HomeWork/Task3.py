@@ -29,7 +29,6 @@ def decoding(txt):
 with open('text1.txt', 'r') as f:
     txt = f.read()
 with open('text2.txt', 'w') as f:
-    # txtCoding = f.write(coding(txt))
     print(coding(txt), file=f)
 with open('text3.txt', 'w+') as f:
     print(decoding(coding(txt)), file=f)
